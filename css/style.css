@@ -47,8 +47,6 @@ img {
   list-style: none;
 }
 .container {
-  width: 1158px;
-
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -61,7 +59,31 @@ body {
 }
 
 /* cooooonnnttteenntttt */
+@media screen and (max-width: 767px) {
+  .address {
+    display: none;
+  }
+  .header-list-nav {
+    display: none;
+  }
+  .hero {
+    background-image: url(../images/mobile-image/Dark-bg.jpg);
+  }
+  .div {
+    display: none;
+  }
+  .work {
+    display: none;
+  }
+}
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/mobile-image/Dark-bg@2x.jpg);
+  }
+}
 /* ///////////////header///////////////////////////// */
 .top-header {
   border-bottom: 1px solid #e7e9fc;
@@ -191,8 +213,8 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 40px;
   /* or 107% */
 
   text-align: center;
@@ -251,11 +273,8 @@ body {
 }
 .list-advantages {
   display: flex;
-
+  flex-direction: column;
   gap: 24px;
-}
-.list-menu {
-  width: 264px;
 }
 
 .icon {
@@ -349,8 +368,8 @@ body {
 }
 .li-icon-svg {
   display: flex;
-  height: 16px;
-  width: 16px;
+  height: 40px;
+  width: 40px;
   padding: 12px;
   fill: #f4f4fd;
 }
@@ -366,12 +385,11 @@ body {
   font-size: 20px;
 
   letter-spacing: 0.02em;
-  line-height: 24px;
-
-  /* NAVY BLUE */
+  line-height: 1.2;
 
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 .list-text {
   font-family: "Roboto";
@@ -380,11 +398,10 @@ body {
   font-size: 16px;
   line-height: 24px;
 
-  /* identical to box height, or 150% */
-
   letter-spacing: 0.02em;
 
   color: #434455;
+  text-align: center;
 }
 .our-team {
   font-family: "Roboto";
@@ -407,11 +424,14 @@ body {
 .list-team {
   padding-bottom: 120px;
   display: flex;
+  align-items: center;
 
   gap: 24px;
+  flex-direction: column;
 }
 .team-li {
   width: 264px;
+
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -435,10 +455,13 @@ body {
 }
 .customers-list {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   gap: 24px;
 }
 .customers-link {
-  width: calc((100% - 120px) / 6);
+  width: 190px;
+
   height: 88px;
 }
 .customers-links {
@@ -484,6 +507,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
 }
 .logo-footer {
   display: inline-block;
