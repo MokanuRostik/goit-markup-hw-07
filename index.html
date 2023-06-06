@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -42,7 +42,15 @@
             </li>
           </ul> -->
         </nav>
-
+        <button
+          type="button"
+          class="mobile-menu-open-btn js-open-menu"
+          aria-expanded="false"
+        >
+          <svg class="mobule-menu-open-btn-icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-hamburgermenu_120234"></use>
+          </svg>
+        </button>
         <!-- <address class="address">
           <ul class="list list-address link-header">
             <li class="wrapper-link-header">
@@ -57,6 +65,72 @@
             </li>
           </ul>
         </address> -->
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="wrapper-mobile-menu-list">
+            <li class="list-mobile-menu">
+              <a href="./index.html" class="link-mobile-modal-menu">Studio</a>
+            </li>
+            <li class="list-mobile-menu">
+              <a href="" class="link-mobile-modal-menu">Contacts</a>
+            </li>
+            <li class="list-mobile-menu">
+              <a href="./portfolio.html" class="link-mobile-modal-menu"
+                >Portfolio</a
+              >
+            </li>
+          </ul>
+          <div class="address-mobile-modal-menu">
+            <ul>
+              <li class="list-mobile-info-mail">
+                <a href="tel:110001111111" class="mobile-menu-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="list-mobile-info">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+          <ul class="list-wrapper-icons-mobile">
+            <li class="li-icon-mobile">
+              <a href="" class="li-icon-link">
+                <svg class="li-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-icon-mobile">
+              <a href="" class="li-icon-link">
+                <svg class="li-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-icon-mobile">
+              <a href="" class="li-icon-link">
+                <svg class="li-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="li-icon-mobile">
+              <a href="" class="li-icon-link">
+                <svg class="li-icon-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -542,7 +616,11 @@
     <!-- ========================kkkkkkkk======================= -->
     <div class="backdrop-hamburger is-hidden" data-modal>
       <div class="modal-hamburger">
-        <button type="button" class="close-button" data-modal-close>
+        <button
+          type="button"
+          class="close-button js-close-menu"
+          data-modal-close
+        >
           <svg width="8" height="8" class="button-modal-icon-hamburger">
             <use href="./images/icons.svg#icon-close" class="use"></use>
           </svg>
