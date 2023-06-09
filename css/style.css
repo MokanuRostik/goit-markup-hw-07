@@ -166,8 +166,9 @@ body {
 .hero {
   background-color: #2e2f42;
   text-align: center;
-  max-width: 1440px;
-  padding: 188px 0;
+  max-width: 428px;
+  padding: 112px 0;
+  height: 432px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -244,7 +245,7 @@ body {
 .list-advantages {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 72px;
 }
 
 .icon {
@@ -292,7 +293,6 @@ body {
 
 .team {
   background-color: #f4f4fd;
-  margin-top: 120px;
 }
 
 .wrapper_icons {
@@ -344,9 +344,9 @@ body {
 .list-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
   letter-spacing: 0.02em;
   line-height: 1.2;
 
@@ -357,14 +357,13 @@ body {
 .list-text {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 
   letter-spacing: 0.02em;
 
   color: #434455;
-  text-align: center;
 }
 .our-team {
   font-family: "Roboto";
@@ -389,7 +388,7 @@ body {
   display: flex;
   align-items: center;
 
-  gap: 24px;
+  gap: 72px;
   flex-direction: column;
 }
 .team-li {
@@ -419,8 +418,9 @@ body {
 .customers-list {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px 16px;
+  justify-content: center;
 }
 .customers-link {
   width: 190px;
@@ -479,7 +479,6 @@ body {
   color: #ffffff;
 }
 .footer-container {
-  display: flex;
   align-items: baseline;
   flex-direction: column;
 }
@@ -527,11 +526,13 @@ body {
 
   color: #f4f4fd;
   margin-top: 16px;
+  margin: 0 auto;
 }
 
 .footer-icons {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .footer-icon {
   display: flex;
@@ -1081,14 +1082,14 @@ body {
 /* ================= footer-form  ==================== */
 .footer-form {
   gap: 24px;
-  display: flex;
+
   flex-direction: column;
 }
 .wrapper-form-info {
   margin-top: 16px;
 }
 .input-form-footer {
-  width: 264px;
+  width: 100%;
   height: 40px;
   border: 1px solid #ffffff;
   background-color: #000000;
@@ -1244,6 +1245,7 @@ body {
     padding: 32px 0;
     text-align: center;
   }
+
   .footer-wrraper {
     margin-top: 72px;
   }
@@ -1287,9 +1289,11 @@ body {
   }
 
   .mobile-menu-container {
-    position: relative;
     padding-top: 80px;
     padding-left: 24px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .mobile-menu-close-btn.js-close-menu {
@@ -1318,14 +1322,12 @@ body {
     color: #2e2f42;
     text-decoration: none;
   }
-  .wrapper-mobile-menu-list {
-    padding-right: 236px;
-  }
+
   .list-mobile-menu {
     margin-bottom: 40px;
   }
   .address-mobile-modal-menu {
-    margin-top: 50px;
+    margin-top: auto;
   }
   .mobile-menu-tel {
     font-family: "Roboto";
@@ -1376,7 +1378,6 @@ body {
     justify-content: center;
     gap: 24px;
     margin-top: 48px;
-    position: absolute;
   }
   .list-mobile-info {
     padding-top: 40px;
@@ -1397,6 +1398,9 @@ body {
   }
   .footer-form-wrapper {
     margin-top: 72px;
+  }
+  .container {
+    width: 428px;
   }
 }
 
@@ -1437,6 +1441,9 @@ body {
     align-items: flex-start;
 
     gap: 40px;
+  }
+  .container {
+    width: 768px;
   }
   .hero {
     background-image: linear-gradient(
