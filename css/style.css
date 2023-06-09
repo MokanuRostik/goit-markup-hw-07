@@ -1559,6 +1559,7 @@ body {
   }
   .footer-form {
     flex-direction: row;
+    display: flex;
   }
   .footer-title-icon {
     text-align: inherit;
