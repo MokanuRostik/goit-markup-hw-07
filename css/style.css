@@ -1533,6 +1533,7 @@ body {
   .list-team {
     flex-flow: wrap;
     justify-content: center;
+    gap: 24px;
   }
   .customers-list {
     flex-flow: wrap;
