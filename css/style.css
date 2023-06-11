@@ -1238,6 +1238,35 @@ body {
   fill: #ffffff;
   border-color: #404bbf;
 }
+.list-title-team {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #2e2f42;
+}
+
+.list-text-team {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  /* SLATE */
+
+  color: #434455;
+}
+
 /* ===================== */
 @media screen and (max-width: 767px) {
   .wrapper {
@@ -1291,7 +1320,7 @@ body {
   .mobile-menu-container {
     padding-top: 80px;
     padding-left: 24px;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -1372,6 +1401,8 @@ body {
     right: 15px;
     padding: 0;
     line-height: 0;
+    background-color: transparent;
+    border: none;
   }
   .list-wrapper-icons-mobile {
     display: flex;
@@ -1399,10 +1430,21 @@ body {
   .footer-form-wrapper {
     margin-top: 72px;
   }
+  .logo-footer {
+    margin-bottom: 16px;
+  }
+  .input-form-footer {
+    margin-bottom: 16px;
+  }
 }
 @media screen and (min-width: 428px) {
   .container {
     width: 428px;
+  }
+}
+@media screen and (max-width: 1157px) {
+  .work {
+    display: none;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -1423,6 +1465,7 @@ body {
   .mobile-menu {
     display: none;
   }
+
   .address {
     margin-left: auto;
     padding-top: 16px;
@@ -1495,24 +1538,31 @@ body {
     text-align: inherit;
   }
   .list-advantages {
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 72px 24px;
+    flex-direction: row;
+    justify-content: center;
   }
-  .list-team > .team-li > .wrapper > h3 {
+  .div {
+    display: none;
+  }
+  .list-title-team {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    /* identical to box height, or 120% */
 
     text-align: center;
     letter-spacing: 0.02em;
 
+    /* NAVY BLUE */
+
     color: #2e2f42;
-    display: flex;
-    justify-content: center;
-    padding-top: 32px;
   }
-  .list-team > .team-li > .wrapper > p {
+  .list-text-team {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -1521,11 +1571,8 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #434455;
-    display: flex;
 
-    margin-top: 8px;
-    margin-left: 67px;
-    margin-right: 67px;
+    margin-bottom: 8px;
   }
   .list-wrapper-icons {
     padding-bottom: 32px;
@@ -1554,7 +1601,7 @@ body {
   }
   .footer-wrraper {
     position: absolute;
-    top: 18px;
+    top: 93px;
     right: 120px;
     margin-left: auto;
   }
@@ -1564,6 +1611,9 @@ body {
   }
   .footer-title-icon {
     text-align: inherit;
+  }
+  .footer-text {
+    margin: 0;
   }
   .btn-footer-form {
     font-family: "Roboto";
