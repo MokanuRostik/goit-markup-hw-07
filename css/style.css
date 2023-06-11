@@ -148,6 +148,10 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.wrapper {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .link-header {
   color: #2e2f42;
   padding: 24px 0;
@@ -248,9 +252,6 @@ body {
   gap: 72px;
 }
 
-.icon {
-  padding: 24px 102px;
-}
 .div {
   width: 264px;
   height: 112px;
@@ -1247,6 +1248,7 @@ body {
 
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 
   color: #2e2f42;
 }
@@ -1273,6 +1275,8 @@ body {
     background-color: #ffffff;
     padding: 32px 0;
     text-align: center;
+    padding-top: 32px;
+    margin-bottom: 32px;
   }
 
   .footer-wrraper {
@@ -1465,7 +1469,9 @@ body {
   .mobile-menu {
     display: none;
   }
-
+  .footer-form-wrapper {
+    margin-top: 72px;
+  }
   .address {
     margin-left: auto;
     padding-top: 16px;
@@ -1608,6 +1614,8 @@ body {
   .footer-form {
     flex-direction: row;
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer-title-icon {
     text-align: inherit;
@@ -1630,6 +1638,7 @@ body {
   }
   .sub-text {
     text-align: inherit;
+    transform: translateX(26%);
   }
   .input-form-footer {
     height: 46px;
@@ -1637,6 +1646,8 @@ body {
   .btn-footer-form {
     height: 46px;
     margin-top: 16px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .modal {
     width: 408px;
@@ -1657,6 +1668,13 @@ body {
   }
   .list-header {
     padding: 0;
+  }
+  .wrapper {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .list-title-team {
+    margin-bottom: 8px;
   }
   .address {
     padding-top: 0;
@@ -1715,9 +1733,6 @@ body {
     width: 264px;
   }
 
-  .icon {
-    padding: 24px 102px;
-  }
   .div {
     width: 264px;
     height: 112px;
@@ -1758,6 +1773,8 @@ body {
   .list-work {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
   }
   .footer {
     padding: 100px 0;
@@ -1771,18 +1788,24 @@ body {
 
   .footer-wrraper {
     position: absolute;
+    position: absolute;
     top: 100px;
+
+    transform: translateX(100%);
+
     right: 720px;
     margin-left: auto;
     margin-right: auto;
   }
   .footer-form-wrapper {
-    /* margin-top: 72px; */
-    margin-left: 80px;
-    /* margin-right: auto; */
     position: absolute;
+    margin-top: 0;
     top: 100px;
+    transform: translateX(80px);
     right: 159px;
+  }
+  .btn-footer-form {
+    height: 36px;
   }
   .footer-icon-list {
     padding: 0px;
@@ -1793,5 +1816,12 @@ body {
   .header-navigation {
     margin-right: auto;
     margin-left: auto;
+  }
+  .sub-text {
+    text-align: inherit;
+    transform: translateX(0);
+  }
+  .input-form-footer {
+    height: 36px;
   }
 }
